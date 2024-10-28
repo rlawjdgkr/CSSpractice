@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 
+      자식, 후손, 형제 선택자
+
+      -가장 마지막 선택자가 스타일 타겟,
+      그 앞은 전부 조건
+    */
+ 
+    div .oran{
+      background: orange;
+    }
+
+    body ul{
+      border: 1px solid #000;
+    }
+    section .low div{
+      font-style: italic;
+      color: violet;
+    }
+  </style>
+  
+
+
+</head>
+<!--body 자식은 div 하나  -->
+<body>
+  <header>
+  <aside>
+      <div>
+        <ul>
+          <p>안녕</p>
+        </ul>
+      </div>
+  </aside>
+  
+  </header>
+  <header>
+    <h1 class="rotate">
+      <span class="kiwi">키위</span>
+    </h1>
+  </header>
+  
+  <div class="lo">
+    <div class="mango">망고망고</div>
+  </div>
+
+  <section id="circle">
+    <h1 class="h1 title">
+    <ul class="left low">
+     <div class=" mango">망고</div>
+    </ul>
+    <!-- div>ul>li*3 -->
+    
+  </section>
+    <!-- css에서 id 부여는 웬만하면 사용 X
+        id는 한명에게만부여가능
+        class 는 여러명에게 부여가능 -->
+<!-- ul의 자식은 4개(li 4개)
+    부모는 자식 여러개 But,자식은 부모 한개 -->
+<div>
+  <ul>
+      <li id="apple" class="red">사과</li>
+      <li>포도</li>
+      <li class="oran">오렌지</li>
+      <li class="red">체리</li>
+    </ul>
+
+    <!-- div+p+span -->
+    <div id="change" class="yellow low primary">당근</div>
+    <p class="red">토마토</p>
+    <span class="oran">오렌지</span>
+  </div>
+  </h1>
+
+</body>
+</html>

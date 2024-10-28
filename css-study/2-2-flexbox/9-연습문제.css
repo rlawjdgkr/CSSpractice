@@ -1,0 +1,102 @@
+@import url(../common.css);
+
+.container{
+  border: 3px double #123456;
+  width: 80%;
+  margin: 20px auto;
+}
+.container .main-title{
+
+  background: lightgray;
+  text-align: center;
+  font-size: 35px;
+  font-weight: 700;
+  padding: 30px;
+  font-family: "궁서체", 'airal';
+}
+.container .sub-title{
+ 
+  background: black;
+  font-size: 22px;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+.container .sub-title span{
+  font-size: 1.2em;
+  color: yellow;
+}
+
+
+.container ul.sub-p{
+  
+  display: flex;
+  padding: 10px;
+  background: gray;
+  justify-content: space-evenly;
+}
+
+article{
+  padding: 10px;
+  
+}
+article.card1{
+  width: 24%;
+  background: red;
+  border: 1px solid white;
+}
+article.card2{
+  width: 24%;
+  background: violet;
+  border: 1px solid white;
+}
+article.card3{
+  width: 24%;
+  background: orange;
+  border: 1px solid white;
+  
+}
+article.card4{
+  width: 24%;
+  background: yellow;
+  border: 1px solid white;
+}
+.card1 .img1{
+  
+  height: 180px;
+  border: 1px solid white;
+}
+.card1 .img1 img {
+  height: 100%;
+  width: 100%;
+}
+.card2 .img2{
+  
+  height: 180px;
+  border: 1px solid white;
+}
+.card2 .img2 img{
+  height: 100%;
+  width: 100%;
+}
+.card3 .img3{
+  height: 180px;
+  border: 1px solid white;
+}
+.card3 .img3 img{
+  height: 100%;
+  width: 100%;
+}
+.card4 .img4{
+  height: 180px;
+  border: 1px solid white;
+}
+.card4 .img4 img{
+  height: 100%;
+  width: 100%;
+}
+.sub-p p{
+  margin-top: 20px;
+  font-size: 25px;
+  padding: 10px;
+}

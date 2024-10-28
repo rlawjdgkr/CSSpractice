@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container{
+      width: 80%;
+      margin: 50px auto;
+      display: flex;
+      height: 400px;
+  
+     
+    }
+    .box{
+      width: 100px;
+      height: 100px;
+      background: tomato;
+      border: 4px solid red;
+      border-radius: 15px;
+      font-size: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      /*          x축 y축 블러  색상 */
+      box-shadow: 10px 10px 4px red;
+      margin-right: -30px;
+      position: relative;
+    }
+    .box:nth-child(even){
+      margin-top: 30px;
+/* 
+      position이 붙으면
+      position이 없는 태그를 깔아뭉갬
+*/
+/* z-index 모두가 positon: relative이거나 같은 동등한 위치 혹은
+   블록이 깔려있을때 우선순위를 높인다. */
+    }
+     .box:nth-child(1){
+      z-index: 1;
+      
+      
+    }
+    .box:nth-child(2){
+      position: relative;
+      z-index: 1;
+    }
+    /* 둘다 position이 있으면
+    아래에 작성한 태그가 위로감 */
+    .box:nth-child(3){
+      position: relative;
+      
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="container">
+    <div class="box box1">1</div>
+    <div class="box box2">2</div>
+    <div class="box box3">3</div>
+    <div class="box box4">4</div>
+    <div class="box box5">5</div>
+  </div>
+
+</body>
+</html>

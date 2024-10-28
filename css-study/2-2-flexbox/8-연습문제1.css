@@ -1,0 +1,41 @@
+@import url('../common.css');
+
+.container{
+  border: 5px solid #caa;
+  background: pink;
+  width: 50%;
+  padding: 20px;
+  margin: 0 auto;
+}
+.container .main-title{
+  
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.container .bottom{
+  
+  display: flex;
+  justify-content: space-between;
+}
+.container .bottom article{
+  
+  width: 45%;
+
+}
+.container .bottom .greentea{
+  background: #dda;
+  
+}
+.container .bottom .coffee{
+  background: #ba7;
+
+  }
+.container .bottom article p{
+  padding: 15px;
+  text-align: justify;
+  line-height: 1.4;
+  text-indent: 7px;
+}
+

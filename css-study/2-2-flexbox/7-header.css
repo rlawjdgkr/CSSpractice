@@ -1,0 +1,49 @@
+@import url('../common.css');
+header{
+  background: #777;
+  color: #fff;
+  display: flex;
+  height: 110px;
+}
+
+header .logo{
+  width: 25%;
+  /* background: green; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .logo img{
+  /* 액자의 사이즐르 만들고 그 뒤로 액자 안의 이미지를 조정 */
+  width: 100%;
+}
+header nav{
+  display: flex;
+  align-items: center;
+}
+
+header .gnb{
+  width: 45%;
+
+  
+}
+header .gnb li{
+  margin-right: 60px;
+}
+
+header nav ul{
+  display: flex;
+  align-items: center;
+
+}
+header nav ul li{
+
+  align-self: stretch;
+}
+header .snb{
+  width: 30%;
+
+}
+header .snb li{
+  margin-right: 25px;
+}

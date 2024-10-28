@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  
+  <style>
+    body, p{
+      margin: 0;
+    }
+   
+    .container{
+      background: url('../img/contact.jpg') 
+      center/ cover;
+       height: 100vh;
+
+       display: flex;
+       justify-content: center;
+       align-items: center;
+
+      }
+      .container p{
+        
+        width: 60%;
+        font-size: 3rem;
+        color: #fff;
+        text-shadow: 3px 3px 8px #111;
+        font-weight: 700;
+        text-align: justify;
+        opacity: 0;
+        
+        animation-name: show;
+        animation-duration: 2s;
+        /* 애니메이션 종료 후 100%에서 정지 */
+        animation-fill-mode: both;
+        animation-iteration-count: infinite;
+        
+      }
+      @keyframes show{
+        0%{
+            opacity: 0;
+            transform:translate(0, -500px);
+          }
+        100%{
+            opacity: 1;
+        }
+      }
+  </style>
+</head>
+<body>
+ 
+  <div class="container">
+    <p>
+      헌법재판소 재판관은 정당에 가입하거나 정치에 관여할 수 없다. 대법원은 법률에 저촉되지 아니하는 범위안에서 소송에 관한 절차, 법원의 내부규율과 사무처리에 관한 규칙을 제정할 수 있다.
+    </p>
+  </div>
+</body>
+</html>

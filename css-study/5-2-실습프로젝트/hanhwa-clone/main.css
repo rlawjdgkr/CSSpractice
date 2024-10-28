@@ -1,0 +1,403 @@
+@import url('../../common.css');
+
+br.mo{
+  display: none;
+}
+/* header style */
+header {
+  background: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+}
+header .inner-header {
+  /* border: 3px solid tomato; */
+  width: 84%;
+  margin: 0 auto;
+}
+
+header .inner-header .logo {
+  /* border: 3px solid violet; */
+  float: left;
+  width: 200px;
+}
+header .inner-header .logo img {
+  width: 100%;
+}
+
+header .inner-header .gnb {
+  /* border: 3px solid red; */
+  float: left;
+  margin-left: 80px;
+}
+header .inner-header .gnb li {
+  /* border: 3px dashed yellow; */
+  float: left;
+  margin-right: 80px;
+}
+
+header .inner-header .gnb li a {
+  /* background: red; */
+  display: block;
+  color: #fff;
+  font-size: 16px;
+}
+header .inner-header .gnb li a:hover {
+  color: #ff8342;
+}
+
+header .inner-header .tnb {
+  /* border: 3px solid blue; */
+  float: right;
+  color: #fff;
+  font-size: 16px;
+}
+header .inner-header .tnb li {
+  float: left;
+  margin-right: 25px;
+}
+header .inner-header .tnb li:first-child i,
+header .inner-header .tnb li:nth-child(2) i {
+  margin-right: 8px;
+  font-size: 18px;
+}
+
+header .inner-header .tnb li:last-child a {
+  border: 1px solid #fff;
+  padding: 5px 15px;
+  border-radius: 30px;
+}
+header .inner-header .tnb li:last-child a:hover {
+  background: #fff;
+  color: #ff8342;
+}
+
+header .inner-header .tnb li:last-child i {
+  margin-left: 5px;
+}
+
+header .inner-header .gnb-mobile {
+  display: none;
+}
+
+/* section.main style */
+section.main {
+  background: url('https://kokokaki.github.io/img/vis_4.jpg') no-repeat center/cover fixed;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section.main .main-title {
+  /* background: red; */
+  width: 50%;
+  color: #fff;
+  text-align: center;
+  text-shadow: 2px 2px 10px #123;
+}
+
+section.main .main-title h2 {
+  font-size: 55px;
+}
+section.main .main-title p {
+  font-size: 25px;
+  margin: 20px 0;
+}
+section.main .main-title .view {
+  font-size: 15px;
+  letter-spacing: 2px;
+  display: block;
+  width: 180px;
+  margin: 0 auto;
+  border: 1px solid #fff;
+  border-radius: 40px;
+  padding: 8px 0;
+  overflow: hidden;
+
+  position: relative;
+}
+section.main .main-title .view::after {
+  content: '';
+  width: 0;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.4);
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: 0.3s;
+}
+section.main .main-title .view:hover::after {
+  width: 100%;
+}
+section .title{
+  text-align: center;
+
+}
+section .title h2{
+  font-size: 45px;
+  color: #111;
+  margin-bottom: 10px;
+}
+section .title p{
+  font-size: 18px;
+  color: #555;
+}
+
+.sub-container{
+    
+  width: 74%;
+  margin: 0 auto; 
+}
+/* about 영역 */
+section.about{
+  
+ margin: 80px 0;
+}
+section.about ul.sub-container{
+  margin-top: 30px;
+  border-bottom: 2px solid #bbd;
+  padding-bottom: 30px;
+  display: flex;
+  height: 550px;
+  
+}
+
+section.about ul.sub-container li{
+  border: px solid blue;
+  width: 33.333%;
+
+}
+
+section.about ul.sub-container li a .img-box{
+  border: 4px solid yellowgreen;
+  height: 350px;
+  overflow: hidden;
+}
+section.about ul.sub-container li a .img-box img{
+    width: 100%;
+    transition: 0.7s;
+}
+
+section.about ul.sub-container li a:hover .img-box img{
+  transform: scale(1.2);
+}
+section.about ul.sub-container li .text {
+  /* border: 3px solid blue; */
+  padding: 25px;
+}
+section.about ul.sub-container li .text h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+section.about ul.sub-container li .text p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+section.about ul.sub-container li .text .more {
+  /* lowercase : 일괄 소문자 변경 */
+  text-transform: uppercase;
+  font-weight: 700;
+  display: flex;
+  position: relative;
+  padding-left: 40px;
+  height: 40px;
+  align-items: center;
+  
+}
+
+section.about ul.sub-container li .text .more::before{
+  content: '→';
+  width: 30px;
+  height: 30px;
+  background: #ff8342;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  position: absolute;
+  left: 0;
+  
+}
+
+/* innovation 영역 */
+section.innovation{
+  
+  margin-bottom: 150px;
+}
+section.innovation .img-box{
+  background: url('https://kokokaki.github.io/img/product_1.jpg')
+  no-repeat center / cover;
+  margin-top: 50px;
+  height: 540px;
+  position: relative;
+}
+section.innovation .img-box .inner{
+ 
+  width: 80%;
+  background: #3a3c4e;
+  color: #fff;
+
+  position:  absolute;
+  left: 50%;
+  top: 85%;
+  transform:translate(-50%, 0);
+}
+section.innovation .img-box .inner h3 {
+  background: #fff;
+  color: #222;
+  font-size: 18px;
+  padding: 25px 45px;
+  
+  
+
+  
+}
+section.innovation .img-box .inner .bottom {
+  padding: 35px 85px;
+  display: flex;
+  
+  justify-content: space-between;
+  border: 1px solid #000;
+}
+section.innovation .img-box .inner .bottom p {
+  width: 70%;
+
+}
+section.innovation .img-box .inner .bottom a{
+background: orange;
+padding: 7px 30px;
+border-radius: 50px;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 60px;
+}
+section.innovation .img-box .inner .bottom a:hover{
+  background: #f86010;
+}
+section.me{
+  height: 800px;
+  position:relative;
+  background: url('https://kokokaki.github.io/img/me.jpg');
+ 
+  
+}
+section.me h3{
+  margin-top: 25px;
+  font-size: 20px;
+  
+}
+section.me p{
+  margin-top: 10px;
+}
+section.me .more{
+  
+  height: 60px;
+  margin-top: 30px;
+
+}
+section.me li{
+
+margin-bottom: 20px;
+
+width: 95%;
+}
+section.me li.clearfix{
+  
+  display: flex;
+  align-items: center;
+
+}
+section.me li.clearfix em{
+  font-size: 18px;
+  font-weight: 700;
+  width: 100px;
+  
+
+}
+section.me li h3{
+
+  padding-right: 20px;
+}
+section.me .sub-container li i{
+  
+  color: orange;
+  padding-bottom: 10px;
+}
+section.me .sub-container p{
+  padding-bottom: 10px;
+  margin-left: 20px;
+}
+section.me li.clearfix em{
+  margin-left: 20px;
+}  
+section.me li.clearfix p{
+  margin-left: 30px;
+  
+  
+}
+section.me #incruit-btn{
+ 
+  position:absolute;
+  left: 50%;
+  top: 80%;
+  transform: translate(-50%, -50%);
+  background: tomato;
+  width: 200px;
+  height: 40px;
+  border-radius: 50px;
+  border: none;
+  /* 마우스를 갖다 대었을때 손가락 표시 나타ㄴㅁ */
+  cursor: pointer;
+
+}
+
+
+section.me .more{
+
+  margin-bottom: 10px;
+
+  margin-left: 20px;  
+}
+
+section.sns .sub-container{
+  border: 1px solid red;
+  display: flex;
+  
+}
+section.sns .sub-container .img-box{
+    border: 1px solid #000;
+}
+.sub-container{
+  margin-top: 50px;
+  border-top:4px solid #000;
+  border-bottom: 4px solid #000;
+}
+section.sns ul.sub-container{
+  border: 1px solid #000;
+}
+section.sns ul.sub-container li{
+  width: 33.3%;
+}
+section.sns ul.sub-container li .img-box{
+  
+  overflow: hidden;
+  height: 300px;
+}
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+section .title h2{
+  margin-top: 100px;
+}
+section.me .list > li:first-child{
+  border-bottom: 1px solid #ddd;
+
+}

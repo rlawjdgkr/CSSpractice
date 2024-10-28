@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box{
+      width: 150px;
+      height: 150px;
+      background: tomato;
+      margin: 30px;
+
+      animation-name: rotation;
+      animation-duration: 5s;
+      animation-iteration-count: 2;
+      animation-timing-function: linear;
+      /* 
+        normal: 0% ~ 100% 
+        reverse: 100% ~ 0% = 역방향 애니메이션
+        alternate: 0% ~ 100% ~ 0%
+        alternate:-reverse: 100% ~ 0% ~ 100%
+        */
+      animation-direction: alternate;
+    }
+    @keyframes rotation{
+      0%{
+        transform: translate(0, 0);
+      }
+      25%{
+        transform: translate(100px, 0);
+      }
+      50%{
+        transform: translate(200px, 100px);
+      }
+      75%{
+        transform: translate(0, 100px);
+      }
+      100%{
+        transform: translate(0, 0);
+      }
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="box"></div>
+
+</body>
+</html>

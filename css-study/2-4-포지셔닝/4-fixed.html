@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+<style>
+  body{
+    height: 3000px;
+  }
+  header{
+    /* background: orange; */
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid gray;
+    background: #fff;
+    z-index: 100;
+    /* 
+      position을 쓰면
+      가로 길이 100%가 해제됨
+      고로 width: 100% 속성 사용해야함
+    */
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+  }
+  header .logo{
+    font-size: 40px;
+    padding: 0;
+    margin: 20px 20px 30px;
+  
+
+ }
+  header nav ul{
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+    display: flex;
+  }
+  header nav ul li{
+    margin-right: 30px;
+
+  }
+  .ad-banner{
+    width: 150px;
+    height: 600px;
+    background: gray;
+    position:absolute;
+    right: 30px;
+    top: 150px;
+    z-index: -100;
+  }
+  .content{
+    margin-top: 150px;
+    position: sticky;
+    top: 200px;
+
+  }
+</style>
+</head>
+
+<body>
+
+  <header>
+    <h1 class="logo">로고</h1>
+    <nav>
+      <ul>
+        <li>소개</li>
+        <li>커뮤니티</li>
+        <li>자료실</li>
+        <li>회원가입</li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <p class="content">
+      안녕하십니까 하잉하이~
+    </p>
+  </main>
+  <aside class="ad-banner">광고</aside>
+  
+</body>
+</html>

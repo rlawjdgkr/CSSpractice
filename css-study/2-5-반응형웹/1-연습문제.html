@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형 디자인 연습</title>
+    <style>
+      .container{
+        display: flex;
+      }
+      .box{
+        width: 100px;
+        height: 100px;
+        background: orange;
+        border: 4px dashed tomato;
+        border-radius: 10px;
+        margin: 10px;
+        
+      }
+      @media (max-width: 768px){
+        /* 박스의 크기가 45퍼기 때문에 3개가 들어갈 수 없고
+       flwx-wrap:wrap을 사용하면 2열로 된다  */
+        .container{
+          flex-wrap: wrap;
+        } 
+        .box{
+          width: 45%;
+        }  
+        }
+     
+      @media (max-width: 480px){
+        .container{        
+        flex-direction: column;
+      }
+        .box{
+          width: 95%;
+          
+        }
+    }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="box">박스 1</div>
+        <div class="box">박스 2</div>
+        <div class="box">박스 3</div>
+        <div class="box">박스 4</div>
+    </div>
+
+</body>
+</html>

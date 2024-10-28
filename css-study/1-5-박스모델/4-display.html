@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* inline 태그 input태그 다른 인라인 태그는
+    너비 길이 조절이 안되지만 input은 가능  */
+    .box{
+      margin-bottom: 50px;
+    }
+    .box input{
+      display: inline-block;
+      height: 40px;
+      
+    }
+    
+    .box input:nth-child(3){
+     background: greenyellow;
+    /* display none특징: 화면에서 사라지고 자리도 뺏김 */
+     /* display: none; */
+      /*opacity: 화면에는 사라지지만(투명도) 자리는 남아있음  */
+     /* opacity: 0.2; */
+    /* visibility : 실제로 사라지는데 자리는 유지 */
+     visibility: hidden;
+    }
+
+    .click{
+      margin-left: 20px;
+      border: 2px solid #000;
+        /* 내용에 핏하게 */
+      width: 100px;
+      height: 100px;
+      /* padding: 7px 14px; */
+      border-radius: 10px;
+      
+    }
+    .click a{
+     /* a태그는 인라인 태그이기 때문에 길이가 바뀔 수 없을때
+     display:block을 사용하여 너비를 조절 할 수 있도록 해줌
+     */
+    
+     display: block;
+     justify-content: center;
+     align-items: center;
+      width: 100%;
+      height: 100%;
+      font-weight: 700;
+      text-decoration: none;
+      color: gray;
+      background: orange;
+    }
+
+  </style>
+</head>
+<body>
+
+  <span>안녕</span>
+  <div class="box">
+    <input type="text" value="1">
+    <input type="text" value="2">
+    <input type="text" value="3">
+    <input type="text" value="4">
+    <input type="text" value="5">
+  </div>
+
+  <div class="click">
+    <a href="#">click me!</a>
+  </div>
+
+</body>
+</html>

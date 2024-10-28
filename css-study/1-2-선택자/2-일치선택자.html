@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /*  */
+    li.oran{
+      color: orange;
+    }
+    li#apple.red{
+      background: red;
+    }
+    .yellow.low#change.primary{
+      background: orange;
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <!-- div>ul>li*3 -->
+  <div>
+    <!-- css에서 id 부여는 웬만하면 사용 X
+        id는 한명에게만부여가능
+        class 는 여러명에게 부여가능 -->
+
+        <ul>
+      <li id="apple" class="red">사과</li>
+      <li>포도</li>
+      <li class="oran">오렌지</li>
+      <li class="red">체리</li>
+    </ul>
+
+    <!-- div+p+span -->
+    <div id="change" class="yellow low primary">당근</div>
+    <p class="red">토마토</p>
+    <span >오렌지</span>
+
+  </div>
+
+</body>
+</html>

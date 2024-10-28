@@ -1,0 +1,88 @@
+@import url('../common.css');
+
+body{
+  background: #666;
+
+/* 
+  사이트 전체에서 적용할
+  폰트관련 속성
+*/
+font-size: 18px;
+color: #333;
+line-height: 1.5;
+font-family: '굴림', serif;
+
+}
+
+#wrapper{
+  background: orange;
+  width: 70%;
+  margin: 0 auto;  
+ 
+}
+#wrapper header{
+
+background: #123456;
+color: #fff;
+padding: 10px;
+}
+#wrapper header h1{
+  font-size: 2.1rem;
+  font-weight: 700;
+  text-align: center;
+  font-family: '휴먼모음T', cursive;
+  color: #cc0;
+}
+#wrapper header h1 strong{
+  font-size: 3em;
+  color: #fff;
+}
+#wrapper header h1 span{
+  font-size: 1.5em;
+
+}
+#wrapper header h1 em{
+  font-size: 2em;
+ color: darkgray;
+}
+
+#wrapper .container{
+
+display: flex;
+}
+#wrapper footer{
+border: 4px solid blue;
+}
+#wrapper .container .menu{
+  width: 25%;
+  background: #ccc;
+  padding: 20px;
+}
+#wrapper .container .menu li{
+  
+  margin-bottom: 8px;
+}
+#wrapper .container .menu li a{
+  text-decoration: underline;
+  font-family: '바탕체', sans-serif;
+}
+#wrapper .container .menu li a:hover{
+  color: #662;
+  border-bottom: 1px dashed #662;
+}
+#wrapper .container .content{
+  background: #fff;
+  width: 75%;
+}
+#wrapper .container .content h2{
+  background: #800;
+  color: #ee0;
+  font-size: 1.7rem;
+  font-weight: 700;
+  padding: 10px 20px;
+  font-family: '궁서체',cursive;
+}
+#wrapper .container .content p{
+  padding: 20px;
+  text-align: justify;
+}

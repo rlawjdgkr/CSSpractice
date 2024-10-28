@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* input 태그에서 class를 추가하지 않고 아래와 같이 사용가능 */
+    [type = password]{
+      color: red;
+    }
+    [disabled]{
+      width: 120px;
+      height: 50px;
+    }
+    img[src]{
+      
+    }
+  </style>
+</head>
+<body>
+  <img src="#" alt="">
+  <audio src="#"></audio>
+ 
+  <div>
+    <input type="text" value="hello">
+  </div>
+  <div>
+    <input type="password" value="1234">
+  </div>
+  <div>
+    <input type="text" value="사용불가" disabled>
+  </div>
+</body>
+</html>

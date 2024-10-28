@@ -1,0 +1,88 @@
+@import url(../../common.css);
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+header{
+  background: yellow;
+  
+}
+header ul{
+ 
+  display: flex;
+  justify-content: right;
+ 
+}
+header ul li{
+  margin-left: 10px;
+}
+main{
+  /* height: 100vh; */
+  width: 100%;
+  background: red;
+  flex:1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  
+  /* position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  
+
+}
+main img{
+  height: 150px;
+  /* position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  
+}
+
+main div.search-bar{
+  /* position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+}
+main div.search-bar input{
+  width: 300px;
+  height: 50px;
+  border-radius: 40px;
+  border: 1px solid #e1e1e1;
+  box-shadow: 2px 2px 5px gray;
+}
+main div.buttons{
+  /* position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  
+  
+}
+main div button{
+  background: #ececec;
+  border: none;
+  height: 30px;
+}
+footer{
+  
+  /* display: flex;
+  justify-content: space-between;
+  align-items: center; */
+  background: BLUE;
+}
+footer .footer-left{
+  
+  
+
+}
+footer .footer-right{
+ 
+}

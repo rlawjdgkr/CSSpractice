@@ -1,0 +1,82 @@
+body{
+ background: rgb(65, 63, 63);
+ 
+  
+}
+#wrapper{
+  width: 70%;
+  margin: 0 auto;
+}
+header{
+  height: 100px;
+  background: rgb(46, 46, 128);
+  
+}
+h1 strong{
+  font-size: 50px;
+  color: #fff;
+  font-weight: 700;
+}
+h1{
+  padding-top: 20px;
+  text-align: center;
+  color: yellow;
+  font-size: 20px;
+  
+}
+h1 span{
+
+  color: yellow;
+  font-size: 30px;
+  font-weight: 700;
+}
+h1 em{
+  color: lightgray;
+  font-size: 35px;
+  font-weight: 700;
+  
+}
+div.container{
+display: flex;
+
+  
+}
+.menu{
+  background: lightgray;
+  width: 25%;
+  padding: 30px 0 30px 30px;  
+}
+.menu li{
+  
+  margin-bottom: 10px;
+}
+.menu li>a{
+  color: black;
+}
+.content{
+  width: 75%;
+}
+div h2{
+  
+  background: rgb(112, 31, 31);
+  padding: 10px 10px 10px 20px;
+  font-size: 20px;
+  color: yellow;
+  font-weight: 700;
+}
+div p{
+  background: #fff;
+  padding : 10px;
+  
+  
+}
+footer{
+  padding: 10px;
+  background: gray;
+}
+
+  
+ 
+    
+  
+ 

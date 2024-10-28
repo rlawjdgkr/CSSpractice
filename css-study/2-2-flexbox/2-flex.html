@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .wrapper{
+      border: 4px solid #000;
+      padding: 20px;
+      /* 가로배치이지만 해상도가 다른 경우에 블록이 줄어들기 때문에 줄어들지
+      않고 세로배치로 돌아가게 하는 속성 */
+      flex-direction: row;
+      display: flex;
+      /* no-wrap 무조건 1줄 유지 */
+      /* wrap 일정 넘어가면 박스 1개씩 한줄 내려감 */
+      flex-wrap: wrap;
+    }
+    /* 디바이스가 가로 700픽셀 아래에서는  */
+    @media (max-width:700px) {
+      .wrapper{
+        flex-direction: column;
+      }
+    }
+    .box{
+      width: 150px;
+      height: 100px;
+      border: 4px solid red;
+      border-radius: 15px;
+      font-size: 40px;
+    }
+    .w2{
+      margin-top: 20px;
+     display: flex;
+     flex-wrap: wrap;
+
+    }
+    *{
+      box-sizing: border-box;
+    }
+    .w2 .box{
+      width: 25%;
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="box">A</div>
+    <div class="box">B</div>
+    <div class="box">C</div>
+    <div class="box">D</div>
+    <div class="box">E</div>
+    <div class="box">F</div>
+  </div>
+  <div class="wrapper w2">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+
+  </div>
+  
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box{
+      width: 150px;
+      height: 150px;
+      background: greenyellow;
+    }
+    .box:hover {
+      animation-name:grow-shrink;
+      animation-duration: 3s;
+      transition-timing-function: linear;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+    }
+    /* 애니메이션 만들기 */
+    @keyframes grow-shrink {
+      0% {
+        width: 150px;
+        background: greenyellow;
+      }
+      50% {
+        width: 500px;
+        background: orange;
+      }
+      100% {
+        width: 300px;
+        background: blue;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+</html>

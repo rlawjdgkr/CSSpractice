@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* first-child 첫번째 자식만 스타일 지정 */
+    #fruits li:first-child{
+      color: red;
+    }
+    
+    #fruits li:last-child{
+      color: greenyellow;
+    }
+    /* n은 여기서 1부터 시작 */
+    #fruits li:nth-child(4){
+      color: orange;
+    }
+    /* 홀수번째 과일만 선택 */
+    /* n에 0부터 순서대로 대입했을 때
+        선택되는 태그가 스타일됨 */
+    #fruits li:nth-child(odd){
+      font-style: italic;
+    }
+    #fruits li:nth-child(even){
+      background: aqua;
+    }
+
+    #fruits li:nth-child(n + 3){
+    font-size: 24px;
+    }
+    /* nth-child는 뒤에 나올 위치를 먼저 확인하고 적용함
+      복잡하기 때문에 보통 li일때만 사용함 */
+    #sports div:nth-child(3){
+      background: brown;
+    }
+
+    /* 생년월일로 한국나이를 계산
+    
+      2024 -year + 1 = 한국 나이
+      */
+  </style>
+</head>
+<body>
+  
+  <div id="sports">
+    <div>축구</div>
+    <div>야구</div>
+    <p>농구</p>
+    <div>배구</div>
+    <div>수영</div>
+  </div>
+
+
+  <ul id="fruits">
+    <li>딸기</li>
+    <li>망고</li>
+    <li>사과</li>
+    <li>오렌지</li>
+    <li>바나나</li>
+    <li>자몽</li>
+    <li>라임</li>
+  </ul>
+
+</body>
+</html>

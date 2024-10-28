@@ -1,0 +1,735 @@
+@import url('../../common.css');
+
+br.mo {
+  display: none;
+}
+
+/* header style */
+header {
+  background: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+}
+header .inner-header {
+  /* border: 3px solid tomato; */
+  width: 84%;
+  margin: 0 auto;
+}
+
+header .inner-header .logo {
+  /* border: 3px solid violet; */
+  float: left;
+  width: 200px;
+}
+header .inner-header .logo img {
+  width: 100%;
+}
+
+header .inner-header .gnb {
+  /* border: 3px solid red; */
+  float: left;
+  margin-left: 80px;
+}
+header .inner-header .gnb li {
+  /* border: 3px dashed yellow; */
+  float: left;
+  margin-right: 80px;
+}
+
+header .inner-header .gnb li a {
+  /* background: red; */
+  display: block;
+  color: #fff;
+  font-size: 16px;
+}
+header .inner-header .gnb li a:hover {
+  color: #ff8342;
+}
+
+header .inner-header .tnb {
+  /* border: 3px solid blue; */
+  float: right;
+  color: #fff;
+  font-size: 16px;
+}
+header .inner-header .tnb li {
+  float: left;
+  margin-right: 25px;
+}
+header .inner-header .tnb li:first-child i,
+header .inner-header .tnb li:nth-child(2) i {
+  margin-right: 8px;
+  font-size: 18px;
+}
+
+header .inner-header .tnb li:last-child a {
+  border: 1px solid #fff;
+  padding: 5px 15px;
+  border-radius: 30px;
+}
+header .inner-header .tnb li:last-child a:hover {
+  background: #fff;
+  color: #ff8342;
+}
+
+header .inner-header .tnb li:last-child i {
+  margin-left: 5px;
+}
+
+header .inner-header .gnb-mobile {
+  display: none;
+}
+
+/* section.main style */
+section.main {
+  background: url('https://kokokaki.github.io/img/vis_4.jpg') no-repeat center/cover fixed;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section.main .main-title {
+  /* background: red; */
+  width: 50%;
+  color: #fff;
+  text-align: center;
+  text-shadow: 2px 2px 10px #123;
+}
+
+section.main .main-title h2 {
+  font-size: 55px;
+}
+section.main .main-title p {
+  font-size: 25px;
+  margin: 20px 0;
+}
+section.main .main-title .view {
+  font-size: 15px;
+  letter-spacing: 2px;
+  display: block;
+  width: 180px;
+  margin: 0 auto;
+  border: 1px solid #fff;
+  border-radius: 40px;
+  padding: 8px 0;
+  overflow: hidden;
+
+  position: relative;
+}
+section.main .main-title .view::after {
+  content: '';
+  width: 0;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.4);
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: 0.3s;
+}
+section.main .main-title .view:hover::after {
+  width: 100%;
+}
+
+section .title {
+  text-align: center;
+}
+
+section .title h2 {
+  font-size: 45px;
+  color: #111;
+  margin-bottom: 10px;
+}
+
+section .title p {
+  font-size: 18px;
+  color: #555;
+}
+
+.sub-container {
+  /* background: orange; */
+  width: 74%;
+  margin: 0 auto;
+}
+
+/* about 영역 */
+section.about {
+  margin: 80px 0;
+}
+
+section.about ul.sub-container {
+  border-bottom: 2px solid #ddd;
+  margin-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+}
+
+section.about ul.sub-container li {
+  /* border: 3px solid blue; */
+  width: 33.333%;
+}
+section.about ul.sub-container li a .img-box {
+  /* border: 4px solid yellowgreen; */
+  height: 350px;
+  overflow: hidden;
+}
+section.about ul.sub-container li a .img-box img {
+  width: 100%;
+  transition: 0.7s;
+}
+
+section.about ul.sub-container li a:hover .img-box img {
+  transform: scale(1.2);
+}
+
+section.about ul.sub-container li .text {
+  /* border: 3px solid blue; */
+  padding: 25px;
+}
+section.about ul.sub-container li .text h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+section.about ul.sub-container li .text p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+section.about ul.sub-container li .text .more {
+  /* lowercase : 일괄 소문자 변경 */
+  text-transform: uppercase;
+  font-weight: 700;
+  /* border: 2px solid #000; */
+  position: relative;
+  padding-left: 40px;
+}
+
+section.about ul.sub-container li .text .more::before {
+  content: '→';
+  width: 30px;
+  height: 30px;
+  background: #ff8342;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  position: absolute;
+  left: 0;
+  top: -7px;
+}
+
+/* innovation 영역 */
+section.innovation {
+  /* background: orange; */
+  margin-bottom: 150px;
+}
+
+section.innovation .img-box {
+  background: 
+    url('https://kokokaki.github.io/img/product_1.jpg')
+    no-repeat center/cover;
+  margin-top: 50px;
+  height: 540px;
+  position: relative;
+}
+
+section.innovation .img-box .inner {
+  /* border: 3px solid red; */
+  width: 80%;
+  background: #3a3c4e;
+  color: #fff;
+
+  position: absolute;
+  left: 50%;
+  top: 80%;
+  transform: translate(-50%, 0);
+}
+
+section.innovation .img-box .inner h3 {
+  background: #fff;
+  color: #222;
+  font-size: 18px;
+  padding: 25px 45px;
+}
+section.innovation .img-box .inner .bottom {
+  padding: 35px 85px;
+  display: flex;
+  justify-content: space-between;
+}
+section.innovation .img-box .inner .bottom p {
+  /* background: red; */
+  width: 70%;
+  line-height: 1.5;
+}
+section.innovation .img-box .inner .bottom a {
+  background: #ff8342;
+  padding: 7px 30px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section.innovation .img-box .inner .bottom a:hover {
+  background: #f86010;
+}
+
+/* me 영역 */
+section.me {
+  background: 
+  url('https://kokokaki.github.io/img/me.jpg')
+  no-repeat center/cover
+  ;
+  padding: 80px 0;
+  margin-bottom: 150px;
+}
+section.me .list {
+  /* background: orange; */
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+}
+section.me .list > li {
+  /* border: 4px solid greenyellow; */
+  padding: 30px 60px;
+}
+section.me .list > li:first-child {
+  border-bottom: 1px solid #ddd;
+}
+section.me .list > li h3 {
+  /* background: skyblue; */
+  font-size: 18px;
+  position: relative;
+}
+section.me .list > li h3 i {
+  position: absolute;
+  left: -30px;
+  top: -3px;
+  color: #ff8342;
+}
+section.me .list > li p {
+  margin: 20px 0;
+  line-height: 1.6;
+}
+section.me .list > li .more {
+  font-size: 16px;
+  font-weight: 700;
+}
+section.me .list > li .more i {
+  color: #ff8342;
+  font-size: 14px;
+  margin-left: 3px;
+}
+
+/* section sns style */
+section.sns {
+  margin-bottom: 60px;
+}
+
+section.sns ul {
+  margin: 50px auto;
+}
+
+section.sns ul li {
+  /* border: 3px solid #000; */
+  width: 32%;
+  float: left;
+  margin-right: 2%;
+}
+section.sns ul li:last-child {
+  margin-right: 0;
+}
+
+section.sns ul li .img-box {
+  height: 225px;
+  /* border: 2px solid blue; */
+  overflow: hidden;
+  position: relative;
+}
+
+section.sns ul li .img-box img {
+  width: 100%;
+  /* opacity: 0.4; */
+}
+
+section.sns ul li .img-box::before {
+  content: '';
+  width: 0;
+  height: 100%;
+  background: rgba(255, 131, 66, 0.75);
+  position: absolute;
+  z-index: 10;
+  transition: 0.5s;
+}
+section.sns ul li a:hover .img-box::before {
+  width: 100%;
+}
+
+section.sns ul li .img-box::after {
+  content: 'BLOG';
+  font-size: 15px;
+  font-family: 'Exo 2', sans-serif;
+  border: 1px solid #fff;
+  border-radius: 40px;
+  color: #fff;
+  padding: 5px 30px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 500;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: 0.7s;
+}
+section.sns ul li a:hover .img-box::after {
+  opacity: 1;
+}
+
+section.sns ul li .bottom {
+  padding: 20px 0 20px 30px;
+  box-sizing: border-box;
+}
+section.sns ul li .bottom p {
+  font-size: 18px;
+}
+section.sns ul li .bottom p.color {
+  color: #ff8342;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+section.sns ul li .bottom p.time {
+  color: #999;
+  font-size: 14px;
+  margin-top: 30px;
+}
+section.sns ul li .bottom p.time i {
+  margin-right: 5px;
+  font-size: 0.9em;
+}
+
+/* footer style */
+footer {
+  border-top: 1px solid #999;
+  padding: 30px 0;
+}
+footer .inner {
+  width: 84%;
+  margin: 0 auto;
+}
+footer .inner .ft-logo {
+  float: left;
+  width: 14%;
+}
+footer .inner .ft-logo img {
+  width: 100%;
+}
+footer .inner .address {
+  float: left;
+  margin-left: 100px;
+  margin-top: 35px;
+}
+footer .inner .address li:first-child {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+footer .inner .address li:last-child {
+  color: #999;
+}
+
+footer .inner .list {
+  float: right;
+  margin-top: 40px;
+}
+footer .inner .list li {
+  float: left;
+  margin-left: 80px;
+}
+footer .inner .list li:last-child {
+  font-weight: 700;
+}
+footer .inner .list li a:hover {
+  color: #ff8342;
+  text-decoration: underline;
+}
+
+/* 반응형 웹 디자인 */
+/* 노트북 해상도 1600px 미만 */
+@media (max-width: 1600px) {
+  header .inner-header,
+  section .sub-container,
+  footer .inner {
+    width: 95%;
+  }
+  header .inner-header .gnb {
+    margin-left: 50px;
+  }
+  header .inner-header .gnb li {
+    margin-right: 40px;
+  }
+  section.main .main-title {
+    width: 60%;
+  }
+}
+
+/* 태블릿 L사이즈, 노트북 S사이즈 해상도 */
+@media (max-width: 1024px) {
+  header .inner-header nav {
+    display: none;
+  }
+
+  header .inner-header .gnb-mobile {
+    display: block;
+    font-size: 40px;
+    color: #fff;
+    float: right;
+  }
+  section.main .main-title {
+    width: 80%;
+  }
+  section.main .main-title h2 {
+    font-size: 40px;
+  }
+  section.innovation .img-box {
+    height: 400px;
+  }
+  section.innovation .img-box .inner .bottom {
+    padding: 25px 55px;
+  }
+  section.me ul.list ul.in li p::before {
+    left: -20px;
+  }
+  section.sns ul li .img-box {
+    height: 175px;
+  }
+  section.sns ul li .bottom {
+    padding-left: 5px;
+  }
+
+  footer .inner .list {
+    display: none;
+  }
+  footer .inner .ft-logo {
+    margin-top: 15px;
+  }
+}
+
+
+
+/* 태블릿 768px 해상도 (아이패드 미니) */
+@media (max-width: 768px) {
+    
+  section.main .main-title h2 {
+      font-size: 40px;
+  }
+  section.main .main-title p {
+      font-size: 20px;
+  }
+
+  section.about ul.sub-container li {
+      float: none;
+      width: 100%;
+      margin-bottom: 150px;
+  }
+
+  section.about ul.sub-container li .img-box {
+      height: 500px;
+  }
+
+  section.innovation .img-box .inner .bottom {
+      padding: 30px;
+  }
+
+  section.innovation .img-box .inner .bottom p {
+      float: none;
+      width: 100%;
+      margin-bottom: 30px;
+  }
+  section.innovation .img-box .inner .bottom a {
+      float: none;
+      display: block;
+      width: 200px;
+      text-align: center;
+      margin: 0 auto;
+  }
+
+  section.me {
+      padding: 50px 0;
+  }
+
+  section.me ul.list ul.in li em {
+      float: none;
+      display: block;
+      width: 100%;
+      font-size: 17px;
+      margin-bottom: 5px;
+  }
+
+  section.sns ul li {
+      float: none;
+      width: 100%;
+      margin-bottom: 10px;
+  }
+  section.sns ul li a .img-box {
+      height: 380px;
+  }
+
+  section.sns ul li a .bottom p.time {
+      margin-top: 10px;
+  }
+
+  footer .inner .ft-logo {
+      float: none;
+      width: 30%;
+      margin: 0 auto;
+  }
+  footer .inner .address {
+      float: none;
+      width: 100%;
+      text-align: center;
+      margin: 0 auto;
+  }
+}
+
+
+/* 모바일 414px 해상도 (아이폰 678 plus) */
+@media screen and (max-width: 414px) {
+
+  header {
+      height: 60px;
+      line-height: 60px;
+  }
+  header .inner-header .logo {
+      width: 130px;
+      position: absolute;
+      top: -3px;
+      left: 0;
+  }
+
+  section.main .main-title h2 {
+      font-size: 30px;
+  }
+  section.main .main-title p {
+      font-size: 16px;
+  }
+
+  section.main .main-title .view {
+      width: 150px;
+      font-size: 14px;
+  }
+
+  section .title h2 {
+      font-size: 25px;
+  }
+  section .title p {
+      font-size: 14px;
+  }
+
+  section.about {
+      padding: 30px 0;
+  }
+
+  section.about ul.sub-container li {
+      border: 1px solid #ddd;
+      box-sizing: border-box;
+      background: #fafafa;
+      margin-bottom: 10px;
+      height: 450px;
+  }
+
+  section.about ul.sub-container li .img-box {
+      height: 300px;
+  }
+
+  section.innovation .img-box {
+      height: 400px;
+  }
+
+  section.innovation .img-box .inner {
+    top: 40%;
+  }
+
+  section.me ul.list > li {
+      padding: 20px 20px 20px 45px;
+  }
+  section.me ul.list > li p {
+      text-align: justify;
+  }
+
+  section.sns ul li a .img-box {
+      height: 200px;
+  }
+
+  footer {
+      padding: 20px 0;
+  }
+}
+
+/* 모바일 320px 해상도 (아이폰5 / SE) */
+@media screen and (max-width: 320px) {
+
+  br.mo {
+      display: block;
+  }
+
+  .wrap {
+      min-width: 320px;
+  }
+
+  header .inner-header .logo {
+      width: 140px;
+      height: auto;
+  }
+
+  header .inner-header .gnb-mobile {
+      font-size: 32px;
+      margin-right: 15px;
+      position: absolute;
+      right: 0;
+      bottom: 2px;
+  }
+
+  section.main .main-title h2 {
+      font-size: 22px;
+  }
+
+  section.main .main-title p {
+      font-size: 14px;
+  }
+
+  section.about ul li a .img-box {
+      height: 200px;
+  }
+
+  section.about ul li a .text {
+      padding: 15px;
+  }
+
+  section.about ul li a .text h3 {
+      font-size: 18px;
+      margin-bottom: 5px;
+  }
+  section.about ul li a .text p {
+      font-size: 15px;
+      margin-bottom: 5px;
+  }
+
+  section.innovation .img-box {
+      height: 300px;
+  }
+
+  section.me {
+      margin-bottom: 40px;
+  }
+
+  section.sns ul li a .img-box {
+      height: 170px;
+  }
+
+  section.sns ul li a .bottom {
+      padding: 20px 10px;
+  }
+}

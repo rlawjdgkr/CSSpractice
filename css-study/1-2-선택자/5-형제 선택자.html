@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    /* 인접 형제 선택자 */
+    .orange + li {
+    background: orangered;
+    }
+    li + li {
+      font-size: 10px;
+    }
+    /* 형중에 .red가 있는 li*/
+    .red ~ li{
+      background: violet;
+    }
+    /* 그룹 선택자 */
+    h1, h2, h3 {
+      color: red;
+    }
+
+  </style>
+</head>
+<body>
+  
+  <ul>
+    <li class="orange">오렌지</li>
+    <li>사과</li>
+    <li class="orange">오뤠인지</li>
+    <li class="red">자몽</li>
+    <li>수박</li>
+    <li>파인애플</li>
+    <li>레몬</li>
+  </ul>
+
+</body>
+</html>

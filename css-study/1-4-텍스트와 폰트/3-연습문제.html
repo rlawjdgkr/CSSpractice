@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>텍스트와 폰트 스타일링 연습</title>
+    <style>
+
+      main > section:first-child p {
+        font-size: 18px;
+        /* rgb의 숫자나 문자가 같을때 */
+        color: #aa88cc;
+      }
+      /* .gr{
+        color: #333333;
+        font-size: 18px; 
+      }*/
+      .center-text{
+        text-align: center;
+        font-family: 'Arial', sans-serif;
+      }
+      .bold-text{
+        font-weight: bold;
+      }
+      .italic-text{
+      font-style: italic;
+      }
+
+      /* 연습문제 3 */
+      .underline-text{
+        text-decoration: underline;
+      }
+      .strike-text{
+        text-decoration: line-through;
+      }
+      .uppercase-text{
+        text-transform: uppercase;
+      }
+      .capitalize-text{
+        text-transform: capitalize;
+      }
+    </style>
+  </head>
+<body>
+
+    <header>
+        <h1>웹 개발 기초 학습</h1>
+        <p class="subtitle">CSS를 사용한 텍스트와 폰트 스타일링</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>텍스트 색상과 크기</h2>
+            <p class="gr">이 문단의 텍스트 색상을 어두운 회색으로, 크기를 18px로 설정하세요.</p>
+        </section>
+
+        <section>
+            <h2>텍스트 정렬과 폰트 스타일</h2>
+            <p class="center-text">이 문단의 텍스트를 중앙에 정렬하고, Arial 폰트로 변경하세요.</p>
+            <p class="bold-text">이 문단의 텍스트를 굵게 설정하세요.</p>
+            <p class="italic-text">이 문단의 텍스트에 기울임꼴을 적용하세요.</p>
+        </section>
+
+        <section>
+            <h2>텍스트 데코레이션과 변형</h2>
+            <p class="underline-text">이 텍스트에 밑줄을 추가하세요.</p>
+            <p class="strike-text">이 텍스트에 취소선을 추가하세요.</p>
+            <p class="uppercase-text"> rind ding dong ring ding dong.</p>
+            <p class="capitalize-text">rind ding dong ring ding dong.</p>
+        </section>
+    </main>
+
+</body>
+</html>

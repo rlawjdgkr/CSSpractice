@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container{
+      border: 2px solid red;
+      padding: 20px 0;
+      /* display:flex = 블록 요소임에도 자식들이 가로로 배치 된다. */
+      display: flex;
+      /* 
+        row: 주축이 가로 x축
+        column: 주축이 세로 y축      
+      */
+      flex-wrap: wrap;
+      flex-direction: row;
+      /* 주축 정렬 */
+      justify-content: center;
+      height: 800px;
+      /* 교차축 정렬 */
+
+       /*aling-items: 1줄일 때 주로 사용  */
+        align-items: center;
+
+      /* align-content:는 한번에 두줄이 붙어서 움직임 */
+      /* align-content: center; */
+    }
+    
+    .item{
+      width: 300px;
+      height: 100px;
+      border: 2px solid orange;
+      border-radius: 15px;
+      font-size: 40px;
+      
+      /* 텍스트에서도 적용 된다. */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* inline-block을 사용하면 사이 마진이 있기때문에 안됨 */
+     
+    }
+
+    .item:nth-child(2){
+      align-self: flex-start;
+    }
+    .item:nth-child(3){
+      align-self: flex-end;
+    }
+    .item:nth-child(5){
+      /* stretch가 적용되려면
+        높이값이 고정되어 있으면 안됨 */
+      align-self: stretch;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+
+ <div class="container"> 
+    <div class="item">A</div>
+    <div class="item">B</div>
+    <div class="item">C</div>
+    <div class="item">D</div>
+    <div class="item">E</div>
+    
+  </div>
+
+</body>
+</html>

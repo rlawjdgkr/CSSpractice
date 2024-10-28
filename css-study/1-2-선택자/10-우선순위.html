@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+    /* 
+      CSS 우선순위 규칙
+      0. !import - 무한대점
+      1. 인라인 스타일 - 1000점
+      2. 아이디 선택 - 100점
+      3. 클래스 선택 - 10점
+      4. 태그 선택 - 1점
+    */
+    /* 1점짜리 */
+    div{
+      /* color: blue !important; */
+    }
+    /* 100점짜리 */
+    #c-y{
+      color: yellow;
+    }
+    /* 10점짜리 */
+    .c-g{
+      color: green;
+    }
+    /* 1점 : 상속 - 자식들에게 물려줌
+    p태그는 지정되어 있지 않게 때문에 body스타일에 따라 적용됨 */
+    body{
+      color: aqua;
+    }
+    /* 둘다 같은 우선순위이면이면 더 밑에 적은 스타일이 우선순위를 결정짐 */
+    .c-v{
+      color: violet;
+    }
+    div{
+      color: red;
+    }
+    /* 100점 + 1점 = 101점 */
+    #aaa h1{
+      color: gray;
+    }
+    /* 1점 */
+    h1{
+      color: lightcoral;
+    }
+    /* 11점 */
+    .bbb h1{
+      color: orangered;
+    }
+    /* 100점 + 1+ 10 + 1 = 112점 */
+    #aaa div.bbb h1{
+      color: green;
+    }
+    /* 1점+ 10점 + 1점 = 12 */
+    div.bbb > h1{
+      color: violet;
+    }
+    #aaa .bbb h1{
+      color: cyan;
+    }
+    #aaa div.bbb h1{
+      color: dodgerblue;
+    }
+  </style>
+</head>
+<body>
+  
+  <div id="c-y" class="c-g" style="color:orange">안녕하세요1</div>
+  <div id="c-y" class="c-g">안녕하세요2</div>
+  <div class="c-g c-v" >안녕하세요3</div>
+  <div>안녕하세요4</div>
+  <p>안녕하세요5</p>
+
+  <div id="aaa">
+    <div class="bbb">
+      <h1>안녕하세요6</h1>
+    </div>
+  </div>
+
+</body>
+</html>

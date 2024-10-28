@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- plceholder = 입력 hint 표시 -->
+    <!-- disabled = 입력값 막음 -->
+    <!-- type 관련 input태그에서 value 옵션을 사용 할 수 있음음 -->
+    <!-- label : input 타입 감싸기 -->
+     <!-- input type"" name="" :name을 사용하여 그룹화  -->
+    <form action="/ddd">
+      <input type="text" placeholder="이름을 입력하세요." disabled />
+      <br />
+      <input type="password" />
+      <br />
+      <input type="email" value="abc" />
+      <br />
+      취미:
+      <label>
+        <input type="checkbox" name="hobby" />운동
+      </label>
+
+      <label>
+        <input type="checkbox" name="hobby"/>명상
+      </label>
+     
+      <label for="">
+        <input type="checkbox" name="hobby"/>숨쉬기
+      </label>
+      <br />
+        약관 동의:
+        <label>
+          <input type="radio" name="admit" checked> 예
+        </label>
+        <label>
+          <input type="radio" name="admit"> 아니오
+        </label>
+        <br>
+
+        <input type="number" value="0" max="4" min="0">
+        
+        <br>
+      
+        <input type="range" value="3" max="9" min="1">
+        <br>
+        <input type="file" multiple accept="image/*">
+        <br>
+        <textarea rows="5" cols="10"></textarea>
+        <br>
+        <select>
+          <option>카페라떼</option>
+          <option disabled>아메리카노</option>
+          <option selected>카푸치노</option>
+        </select>
+        <br>
+        <!-- input type file 상태에서 원하는 형태의 파일만 
+         불러오고 싶으면 파일형태/* -->
+      <button type="button">확인</button>
+      <!-- type을 생략하면 submit이 기본 -->
+      <button type="submit">전송</button>
+      
+      <button type="reset">초기화</button>
+    <!-- input type 으로 버튼 생성 가능
+      BUT input type은 닫는 태그가 없는 형태이기 때문에
+      구분이 어렵고 image 버튼 생성 불가능 -->
+    </form>
+  </body>
+</html>

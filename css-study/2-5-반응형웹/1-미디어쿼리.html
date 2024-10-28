@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+<style>
+  div.container{
+    
+    background: lightblue;
+    padding: 20px;
+    font-size: 22px;
+    display: flex;
+  }
+  .box{
+    width: 100px;
+    height: 100px;
+    background: orange;
+    margin-right: 10px;
+  }
+  @media (max-width: 800px){
+    .container{
+      background: lightcoral;
+      font-size: 18px;
+      text-decoration: underline;
+    }
+  }
+  @media (max-width: 650px){
+    .box{
+      transform: rotate(45deg);
+    }
+  }
+  @media (max-width: 600px){
+    .container{
+      flex-direction: column;
+      width: 100%;
+    }
+    .box{
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+</style>
+</head>
+<body>
+  
+  <div class="container">
+    <div class="box">박스 1</div>
+    <div class="box">박스 2</div>
+    <div class="box">박스 3</div>
+    <div class="box">박스 4</div>
+    <div class="box">박스 5</div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,423 @@
+@import url('../../common.css');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+br.mo{
+  display: none;
+}
+
+.wrap {
+  font-size: 17px;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+/* header style */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  color: #fff;
+  font-weight: 700;
+  padding: 20px 50px;
+
+  display: flex;
+  align-items: center;
+
+  z-index: 100;
+}
+
+header .logo {
+  flex: 1;
+}
+header .logo img {
+  height: 60px;
+}
+
+header .intro {
+  flex: 4;
+  margin-left: 30px;
+}
+
+header .menu-open {
+  flex: 1; 
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+header .menu-open .menu-txt {
+  font-size: 20px;
+  margin-right: 15px;
+}
+header .menu-open .bar-icon {
+  font-size: 33px;
+}
+
+header .gnb {
+  background: #000;
+  height: 100vh;
+  font-size: 40px;
+  color: #666;
+
+  position: fixed;
+  right: -100%;
+  top: 0;
+  padding: 70px 100px;
+
+  display: flex;
+  flex-direction: row-reverse;
+
+  transition: 0.6s;
+}
+header .gnb.on {
+  right: 0;
+}
+
+header .gnb .close {
+  display: block;
+  color: #fff;
+}
+header .gnb ul {
+  margin-right: 200px;
+}
+header .gnb ul li {
+  font-weight: 700;
+  line-height: 1.7;
+}
+
+header .gnb ul li:hover {
+  color: #fff;
+}
+
+/* section visual */
+section.visual {
+  background: url('../../img/visual1.jpg') 
+    no-repeat center/cover;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+}
+
+section.visual .txt {
+  margin-left: 10%;
+  color: #fff;
+  text-shadow: 3px 3px 5px #000;
+  font-size: 18px;
+  z-index: 100;
+}
+
+section.visual .txt h3 {
+  margin: 30px 0;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+/* 가상의 복제태그 */
+section.visual::after {
+  /* 필수속성 */
+  content: '';
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: rgba(0,0,0,0.3);
+}
+section.content {
+  background: #1b1b1b;
+  color: #fff;
+  padding: 120px 0;
+}
+
+section.content .main-text{
+
+  width: 80%;
+  margin: 0 auto;
+  font-size: 25px;
+
+  display: flex;
+  /* 주축 정렬 */
+  /* justify-content: space-between;  */
+  position: relative;
+}
+/* before, after는 아무 태그에 사용 가능*/
+
+section.content .main-text::before {
+  /* 필수속성 */
+  content: '';
+  width: 100px;
+  height: 100px;
+  background: #ffec03;
+  border-radius: 50%;
+
+  position: absolute;
+  left: 70px;
+  top: 100px;
+}
+section.content .main-text::after {
+  content: '”';
+  font-size: 300px;
+
+  position: absolute;
+  left: 0;
+  top: 100px;
+}
+
+section.content .main-text h3{
+/* border: 4px solid red; */
+  flex:1;
+  font-weight: 700;
+
+}
+section.content .main-text p{
+/* border: 4px solid blue; */
+  flex: 2;
+  font-size: 25px;
+  line-height: 1.4;
+}
+section.content .main-text p span{
+  display: block;
+  margin-top: 30px;
+  color: #999;
+
+}
+section.content .project{
+  /* background: orange; */
+  margin-top: 200px;
+  margin-bottom: 60px
+}
+section.content .project .top{
+  /* border: 4px solid red; */
+  width: 80%;
+  margin: 0 auto 60px;
+  display: flex;
+  justify-content: space-between;
+}
+section.content .project .bottom{
+  /* border: 4px solid blue; */
+  
+  display: flex;
+  justify-content: space-evenly;
+
+}
+section.content .project .bottom li{
+  border: 4px solid #fff;
+  
+  width: 24%;
+  height: 400px;
+  overflow: hidden; 
+  position: relative;
+  
+}
+section.content .project .bottom li a::before{
+ content: '';
+ width: 0;
+ height: 100%;
+ background: rgba(0,0,0,1);
+ position: absolute;
+ left: 0;
+ top: 0;
+ opacity: 0.6;
+
+}
+section.content .project .bottom li a:hover:before{
+  width: 100%;
+  transition: 0.7s;
+
+}
+section.content .project .bottom li a img{
+  width: 100%;
+  
+  
+}
+section.content .project .bottom li a .name{
+  background: #1b1b1b;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  text-align: right;
+  width: 250px;
+  padding: 15px;
+  opacity:  0;
+
+  transition: 1s;
+}
+
+/* a에 hover했을때 클래스 name은 */
+section.content .project .bottom li a:hover .name{
+  animation: show-name 1s both;
+  
+ }
+@keyframes show-name{
+  /* 구간이 2개밖에 없을때 from to 사용 가능 */
+  0%{
+    opacity: 0;
+    bottom: -30px;
+  }
+  100%{
+    opacity: 1;
+    bottom: 10px;
+  }
+}
+
+ section.content .project .top h3{
+/* background: aqua; */
+font-size: 38px;
+font-weight: 700;
+
+}
+section.content .project .top a{
+/* background: violet; */
+font-size: 20px;
+
+}
+section.content .partners{
+  
+  width: 80%;
+  margin: 170px auto 100px;
+  
+}
+section.content .partners h3{
+  font-size: 19px;
+  margin-bottom: 80px;
+
+}
+section.content .partners ul{
+
+  display: flex;
+  /* 한줄로 떨어뜨리게 하는 속성 */
+  flex-wrap: wrap;
+}
+section.content .partners ul li{
+
+
+  width: 25%;
+  margin-bottom: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section.content .partners ul li img{
+  opacity: 0.3;
+  transition: 0.3s;
+}
+section.content .partners ul li img:hover{
+  opacity: 1;
+  
+}
+section.content .contact{
+  background: url('../../img/contact.jpg')
+  no-repeat center/cover fixed;
+  width: 90%;
+  padding: 220px 0;
+}
+
+section.content .contact .inner{
+  width: 70%;
+  margin: 0 auto;
+  font-size: 19px;
+  line-height: 1.4;
+}
+section.content .contact .inner .tel{
+  font-size: 58px;
+  font-weight: 700;
+  margin: 50px 0;
+}
+footer {
+  background: #1b1b1b;
+  color: #999;
+  padding: 0 80px 80px;
+}
+footer ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer ul li:nth-child(2) {
+  color: #eee;
+  font-size: 16px;
+  line-height: 2;
+}
+footer ul li:nth-child(2) span {
+  font-weight: 700;
+  margin-right: 10px;
+  color: #999;
+}
+#go-top{
+  /* fixed는 부모에 상관없이 무조건 브라우저 화면 */
+  position: fixed;
+  right: 50px;
+  bottom: 60px;
+}
+
+/* 큰 테블릿 반응형 디자인 */
+/* 1024px이하 */
+
+@media (max-width: 1024px){
+  section.visual{
+    height: 60vh;
+  }
+}
+section.visual .txt{
+  z-index: 5;
+}
+section.visual .txt h3{
+  font-size: 48px;
+
+}
+header .gnb{
+  width: 80vw;
+  z-index: 500;
+  padding-top: 200px 20px;
+  justify-content: center;
+}
+section.content .main-text h3 {
+  margin-right: 100px;
+  font-size: 24px;
+}
+section.content .main-text p{
+  font-size: 19px;
+}
+section.content .project .bottom{
+  flex-wrap: wrap;
+}
+section.content .project .bottom li{
+  width: 45%;
+}
+
+/* 작은 휴대폰 반응형 디자인 */
+/* 375px이하 */
+
+@media (max-width: 375px){
+  header .intro
+    ,header .menu-open{
+    display: none;
+  }
+  section.visual .txt h3{
+    font-size: 20px;
+  }
+  
+  header .logo img{
+    height: 30px;
+  }
+  section.content .main-text h3{
+    font-size: 18px;
+  }
+  section.content .main-text p{
+    font-size: 12px;
+  }
+  section.content .project .top h3{
+    font-size: 20px;
+  }
+  section.content .project .top a{
+    font-size: 15px;
+  }
+  section.content .project .bottom{
+    flex-direction: column;
+  }
+  section.content .project .bottom li{
+    width: 70%;
+    margin: 0 auto; 
+  }
+  
+}

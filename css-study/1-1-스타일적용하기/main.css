@@ -1,0 +1,9 @@
+h1{
+  font-style: italic;
+  color: orange;
+  background: aqua;
+}
+li{
+  font-size: 30px;
+  text-decoration: underline;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container{
+      margin: 100px;
+
+    }
+    .box{
+      width: 100px;
+      height: 100px;
+      background: orange;
+      border: 4px dashed red;
+      font-size: 30px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .box:nth-child(2){
+      background: yellowgreen;
+      /* position: relative: 자기 위치에서 이동 */
+      /* position: absolute 속성에서 left, top 등 은 절대적인 위치기 때문에
+      기준점이 브라우저 창 끝에서부터 시작 */
+      position: absolute;
+      left: 10px;
+      top: 10px;
+    }
+  </style>
+</head>
+<body>
+  
+    <div class="container">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+    </div>
+</body>
+</html>

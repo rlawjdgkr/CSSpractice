@@ -1,0 +1,165 @@
+@import url('../common.css');
+body{
+  height: 5000px;
+}
+header{
+  
+
+  
+}
+header nav{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  
+}
+
+
+header nav .nav-icons img{
+  margin-right: 10px;
+}
+header nav .logo img{
+  height: 60px;
+}
+
+  
+  
+
+header nav .search-bar input{
+  width: 400px;
+  height: 25px;
+  background: rgb(224, 224, 224);
+  border: none;
+  
+}
+
+main .content-container{
+  width: 100%;
+  background: #f1ecec;
+  display: flex;
+  justify-content: center;
+
+}
+main div.post-header{
+  
+  display: flex;
+  align-items: center;
+  
+  
+}
+main .post-user-image{
+  border-radius: 50px;
+  height: 30px;
+  
+}
+main .post{
+  margin-top: 10px;
+  background: #fff;
+}
+main .post-username{
+  font-size: 15px;
+  font-weight: 600;
+  margin-left: 5px;
+}
+  main .post-image{
+  width: 100%;
+  margin-top: 10px;
+}
+main .post-card{
+  border: 1px solid #000;
+}
+main .post-caption{
+  padding-bottom: 13px;
+  
+}
+main .post-caption strong{
+  font-weight: 700;
+  font-size: 18px;
+}
+div .left-column{
+  
+}
+div .right-column{
+  margin-top: 10px;
+  
+}
+
+div .suggestions{
+  border: 1px solid #8c8a8a;
+  height: 200px;
+  width: 300px;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #fafafa;
+  border-radius: 3px;
+ 
+}
+div .profile-info{
+  display: flex
+}
+div .profile-info strong{
+  font-weight: 700;
+}
+div .profile-info div{
+  margin-left: 10px;
+}
+div .profile-info p{
+  font-size: 14px;
+}
+div .profile-image{
+  border-radius: 50%;
+}
+
+div .suggestion img{
+  border-radius: 50%;
+  
+}
+
+div .suggestion {
+  display: flex;
+  
+  margin-top: 10px;
+  width: 90%;
+  margin-right: 5px;
+
+  align-items: center;  
+}
+div .suggestion div{
+  width: 43%;
+  margin-left: 10px;
+  
+  
+}
+
+div .suggestions h4{
+  width: 90%;
+  margin-bottom: 10px;
+  margin-right: 20px;
+  font-weight: 700;
+  font-size: 19px;
+}
+div .suggestion button{
+  
+  background: rgb(61, 163, 235);
+  color: #fff;
+  height: 25px;
+  border-radius: 3px;
+
+}
+footer{
+  
+}
+footer ul{
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  
+}
+footer ul li{
+  margin-left: 13px;
+  color: rgb(66, 111, 194);
+  font-weight: 700;
+}

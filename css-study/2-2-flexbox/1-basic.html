@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container{
+      border: 2px solid red;
+      padding: 20px;
+      /* display:flex = 블록 요소임에도 자식들이 가로로 배치 된다. */
+      display: flex;
+    }
+    .item{
+      width: 100px;
+      height: 100px;
+      border: 2px solid orange;
+      border-radius: 15px;
+      /* inline-block을 사용하면 사이 마진이 있기때문에 안됨 */
+     
+    }
+  </style>
+</head>
+<body>
+
+ <div class="container"> 
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+  </div>
+
+</body>
+</html>

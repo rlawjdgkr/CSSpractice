@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      margin: 0;
+    }
+    div {
+      border: 2px solid red;
+      /* margin: 10px; */
+    }
+    .root{
+      width: 50%;
+
+    }
+    /* 부모 대비 비율 
+      root가 400px이면 parent 50% = 200px 
+      child = 100px*/
+    .parent{
+      width: 50%;
+    }
+    .child{
+      width: 50%;
+    }
+  </style>
+</head>
+<body>
+  <div class="root">ROOT
+    <div class="parent">PARENT
+      <div class="child">CHILD1</div>
+      <div class="child">CHILD2</div>
+    </div>
+  </div>
+</body>
+</html>
